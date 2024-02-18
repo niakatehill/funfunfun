@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9/11 Memorial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+        }
+        h1, p {
+            text-align: center;
+        }
+        .tribute-text {
+            margin-top: 20px;
+        }
+        .tribute-text p {
+            line-height: 1.6;
+        }
+    </style>
+    <script>
+        // JavaScript to handle any interactivity can be added here
+        // For simplicity, let's add a message when the image is clicked
+        window.onload = function() {
+            var image = document.querySelector('img');
+            image.addEventListener('click', function() {
+                alert("In memory of all those who lost their lives on 9/11. We will never forget.");
+            });
+        };
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>9/11 Memorial</h1>
+        <img src="https://image.cagle.com/243184/750/243184.png" alt="Kid who lost his grandma to 911">
+        <div class="tribute-text">
+            <p>This website serves as a tribute to all the victims of the September 11 attacks. We remember and honor the lives lost, the heroes who responded, and the resilience of our nation.</p>
+        </div>
+    </div>
+</body>
+</html>
