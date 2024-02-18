@@ -44,6 +44,17 @@
             image.addEventListener('click', function() {
                 alert("In memory of all those who lost their lives on 9/11. We will never forget.");
             });
+
+            var audio = document.createElement('audio');
+            audio.src = 'anthem.mp3'
+            let run_once = true
+            document.addEventListener('click',()=>{
+                if(run_once){
+                    run_once = false
+                    audio.play()
+                }
+
+            })
         };
     </script>
 </head>
